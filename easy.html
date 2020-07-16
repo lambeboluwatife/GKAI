@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="A guessing game where users try to get the computer's 4 secret number between 1 to 9"
+    />
+    <meta
+      name="keywords"
+      content="game, application, guessing game, brain game, HTML, CSS, JS, BOOTSTRAP, application"
+    />
+    <meta name="author" content="Lambe Boluwatife" />
+    <title>GKAI | Easy</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css" />
+    <link
+      rel="icon"
+      type="image"
+      href="https://tse3.mm.bing.net/th?id=OIP.omV4YkKbFAz8F5htAT6AMQHaD2&pid=Api&P=0&w=313&h=164"
+    />
+  </head>
+  <body>
+    <!-- <button type="button" onclick="myFunction()">Dark Mode</button> -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+          <div class="card card-body">
+            <!-- Heading -->
+            <h2>Getting Killed And Injured</h2>
+            <h5>Can you get computer's 4 secret digits</h5>
+            <!-- Alert -->
+            <div class="alert"></div>
+            <!-- Inputs -->
+            <div class="allInputs">
+              <div class="form-group">
+                <label for="first input">First Number goes here:</label>
+                <input
+                  type="text"
+                  class="form-control input"
+                  placeholder="First Number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="second input">Second Number goes here:</label>
+                <input
+                  type="text"
+                  class="form-control input"
+                  placeholder="Second Number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="third input">Third Number goes here:</label>
+                <input
+                  type="text"
+                  class="form-control input"
+                  placeholder="Third Number"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="fourth input">Fourth Number goes here:</label>
+                <input
+                  type="text"
+                  class="form-control input"
+                  placeholder="Fourth Number"
+                />
+              </div>
+
+              <button type="button" class="form-control submit btn btn-primary">
+                Submit
+              </button>
+              <div class="replay">
+                <button type="button" class="form-control btn btn-primary">
+                  Re-play</button
+                ><i class="fab fa-reload"></i>
+              </div>
+              <div class="home mt-2">
+                <a class="form-control btn btn-success" href="index.html">
+                  Home</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 m-auto">
+          <div class="card card-body">
+            <!-- Modal -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              How To Play
+              <i class="fas fa-gamepad d-block"></i>
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Getting Killed And Injured
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5><b>Brief History</b></h5>
+                    <p>
+                      <b>Getting Killed And Injured (GKAI)</b> is a logical game
+                      between 2 players in which each player select
+                      <b>4</b> random numbers between <b>1 - 9</b> with no
+                      repeated number. Each player tries to guess correctly the
+                      other player's 4 random number in order of appearance.
+                    </p>
+                    <p>
+                      This is a game I played very well with pen and paper
+                      during my childhood among friends, family and adults
+                      alike. Everybody loved the game because it's challenging
+                      and it involves critical use of logic.
+                    </p>
+                    <p>
+                      I recently came across the game in an old diary which I do
+                      use to play the game back then and I thought about making
+                      it available online for everyone to play.
+                    </p>
+                    <h5><b>How To Play</b></h5>
+                    <p>
+                      The actual concept of the game is built for
+                      <b>2</b> players, but in this case, a user will try to get
+                      the 4 randomly generated numbers by the computer in the
+                      right order.
+                    </p>
+                    <h6>
+                      <b
+                        >The aim is to get the computer's numbers in the right
+                        order.</b
+                      >
+                    </h6>
+                    <h6><b>Instructions:</b></h6>
+                    <p>
+                      You enter any 4 different numbers between <b>1 - 9</b> in
+                      the four input areas provided. The first box for the first
+                      guessed number, the second for the second number and so on
+                      then click the submit button.
+                    </p>
+                    <p>
+                      The system then compares the numbers you put down with the
+                      computer's number and tells you how many number(s) got
+                      injured and how many got killed.
+                    </p>
+                    <p>
+                      If you get an injured, that means a number is correct but
+                      wrongly placed.
+                    </p>
+                    <p>
+                      If you get a killed that means that you got the number
+                      right, in the exact position.
+                    </p>
+                    <p>
+                      For example, Let's say the computer-generated numbers are
+                      <b> 2 9 8 1</b> and you entered
+                      <b>
+                        7 2 9 1. The result will return 2 injured and 1
+                        killed,</b
+                      >
+                      it means you have 3 numbers correct but 2 numbers wrongly
+                      placed and 1 number in the exact position. In this case,
+                      2, 9 and 1 are correct but only 1 is killed (in the right
+                      order) while 2 and 9 are injured (correct but wrongly
+                      placed).
+                    </p>
+                    <p>
+                      So the deal is you have to keep placing guesses of
+                      different numbers from <b>1 - 9</b> in the 4 boxes and
+                      submit to tell you how many killed and how many injured.
+                    </p>
+                    <p>
+                      You do this till you get 4 killed meaning you got all
+                      numbers right and in the exact position.
+                    </p>
+                    <p>
+                      <b>PS</b> You use results of previous guesses to try to
+                      figure out all the right numbers in the right order.
+                    </p>
+                    <p>
+                      The computer numbers is a fixed number, but changes
+                      anytime you wanna play.
+                    </p>
+                    <b>I Hope You Enjoy It</b>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal2">
+      <!-- Modal content -->
+      <div class="modal2-content">
+        <div class="modal2-header">
+          <h2><b>You Won</b></h2>
+          <i class="fab fa-happy"></i>
+        </div>
+        <div class="modal2-body">
+          <b
+            ><h2>
+              You Got All Numbers Correctly
+            </h2></b
+          >
+        </div>
+        <div class="modal2-footer">
+          <button type="button" class="btn btn-light">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="bg-dark" />
+      <!-- footer -->
+      <footer>
+        <div class="text-center">
+          Made with &hearts; | L.B.D Codes &copy; 2020
+          <div class="">
+            <div class="social">
+              <a href="https://twitter.com/LBD_codes " target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="social">
+              <a
+                href="https://web.facebook.com/boluwatife.lambe.5"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/lbd_codes/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="BOOTSTRAP/js/jquery-3.3.1.min.js"></script>
+    <script src="BOOTSTRAP/js/bootstrap.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easy.js" charset="utf-8"></script>
+    <script src="js/game.js" charset="utf-8"></script>
+  </body>
+</html>
