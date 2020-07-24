@@ -91,6 +91,14 @@
 
   let tryCount = 0;
 
+  // let item;
+  // if (localStorage.getItem("result")) {
+  //   result.innerHTML = JSON.parse(localStorage.getItem("result"));
+  //   let work2 = localStorage.getItem("comNum");
+  // } else {
+  //   item = [];
+  // }
+
   // add event listener to submit button
   submit.addEventListener("click", (event) => {
     event.preventDefault();
@@ -380,7 +388,7 @@
             replay.style.display = "block";
 
             // Go to home page
-            home.style.dispaly = "block";
+            home.style.display = "block";
 
             // Hide the submit button
             submit.style.display = "none";
@@ -395,6 +403,11 @@
             div.setAttribute("class", "output");
             result.appendChild(div);
           }
+
+          // let resultsArray = [];
+          // resultsArray.push(result.innerHTML);
+          // localStorage.setItem("result", JSON.stringify(resultsArray));
+          // localStorage.setItem("comNum", JSON.stringify(work2));
         }
       }
     }
