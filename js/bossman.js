@@ -129,8 +129,7 @@
         input[3].value.length >= 2
       ) {
         let innerMsg = document.createElement("div");
-        innerMsg.textContent =
-          "All input fields should contain one number only";
+        innerMsg.textContent = "Enter number from 1 to 9";
         innerMsg.classList.add(
           "btn",
           "text-center",
