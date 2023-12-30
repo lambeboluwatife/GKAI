@@ -24,6 +24,8 @@
       type="image"
       href="https://tse3.mm.bing.net/th?id=OIP.omV4YkKbFAz8F5htAT6AMQHaD2&pid=Api&P=0&w=313&h=164"
     />
+    <script src="https://unpkg.com/dexie@3.1.1/dist/dexie.js"></script>
+    <script src="./js/dexie.min.js"></script>
   </head>
   <body>
     <!-- <button type="button" onclick="myFunction()">Dark Mode</button> -->
@@ -39,38 +41,50 @@
             <!-- Inputs -->
             <div class="allInputs">
               <div class="form-group">
-                <label for="first input">First Number goes here:</label>
+                <label for="input1">First Number goes here:</label>
                 <input
                   type="number"
-                  class="form-control input"
+                  class="form-control input number-input"
                   placeholder="First Number"
+                  id="input1"
+                  min="0"
+                  required
                 />
               </div>
 
               <div class="form-group">
-                <label for="second input">Second Number goes here:</label>
+                <label for="input2">Second Number goes here:</label>
                 <input
                   type="number"
-                  class="form-control input"
+                  class="form-control input number-input"
                   placeholder="Second Number"
+                  id="input2"
+                  min="0"
+                  required
                 />
               </div>
 
               <div class="form-group">
-                <label for="third input">Third Number goes here:</label>
+                <label for="input3">Third Number goes here:</label>
                 <input
                   type="number"
-                  class="form-control input"
+                  class="form-control input number-input"
                   placeholder="Third Number"
+                  id="input3"
+                  min="0"
+                  required
                 />
               </div>
 
               <div class="form-group">
-                <label for="fourth input">Fourth Number goes here:</label>
+                <label for="input4">Fourth Number goes here:</label>
                 <input
                   type="number"
-                  class="form-control input"
+                  class="form-control input number-input"
                   placeholder="Fourth Number"
+                  id="input4"
+                  min="0"
+                  required
                 />
               </div>
 
@@ -230,7 +244,7 @@
                 </div>
               </div>
             </div>
-            <div class="result"></div>
+            <div id="result"></div>
           </div>
         </div>
       </div>
@@ -245,11 +259,7 @@
           <i class="fab fa-happy"></i>
         </div>
         <div class="modal2-body">
-          <b
-            ><h2>
-              You Got All Numbers Correctly
-            </h2></b
-          >
+          <b><h2>You Got All Numbers Correctly</h2></b>
         </div>
         <div class="modal2-footer">
           <button type="button" class="btn btn-light">Close</button>
@@ -266,11 +276,7 @@
           <i class="fab fa-happy"></i>
         </div>
         <div class="modal3-body">
-          <b
-            ><h2>
-              You couldn't get the computer's number.
-            </h2></b
-          >
+          <b><h2>You couldn't get the computer's number.</h2></b>
         </div>
         <div class="modal3-footer">
           <button type="button" class="btn btn-dark">Close</button>
